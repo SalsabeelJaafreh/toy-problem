@@ -26,4 +26,15 @@ DO NOT use a recursive solution to this problem. Your solution must run in linea
 
 nthFibonacci = function(n) {  
  // your code here
+  var fib=[0,1]
+ if(n===0){return n;}
+ if(n===1){return n;}
+ else{
+ 	 var fib=[0,1]
+ 	for(var i=2;i<=n;i++){
+ 		fib[i]=fib[i-1]+fib[i-2]
+ 	}
+ }
+ return fib[n];
+
 };
