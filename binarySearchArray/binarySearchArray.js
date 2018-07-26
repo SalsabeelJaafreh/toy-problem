@@ -11,6 +11,20 @@
  */
 
 var binarySearch = function (array, target) {
-  
-};
+  var min =0;
+  var max =array.length;
+  while(max>=min){
+    var mid = Math.floor((max+min)/2);
+    if(array[mid]===target){
+      return indexOf(target);
+    }
+    else
+     if(array[mid]>target){
+      max--;
+    }else{
+      min++;
+    }
+  }
+  return "not exist";
+}
 
