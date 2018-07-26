@@ -10,7 +10,16 @@
  * Extra credit: Extend your function to handle more than two input strings.
  */
 
-//Works for any number of input strings:
+//Works for any number of input strings
 var commonCharacters = function(string1, string2) {
+  var arr = []
+  for(var i = 0; i < string1.length; i++){
+  if(string2.includes(string1[i]) && string1[i] !== ' '){
+        arr.push(string1[i])
+      } 
+​
+    }
+    return arr.join('')
+} 
+​
   
-};
