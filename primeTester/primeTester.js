@@ -10,4 +10,11 @@
 function primeTester (n) {
   // Write your code here, and
   // return your final answer.
+  var salsabeel=Math.floor(Math.sqrt(n))
+  if(n===1){return false}
+ for(var a=2; a<salsabeel+1;a++){
+   if (n % a ===0)
+   {return false}
+ }
+  return true;
 }
