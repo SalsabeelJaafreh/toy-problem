@@ -16,8 +16,16 @@ A stable sort must return {value: 5, order: 1}, {value:5, order: 2} in that orde
 //output:[ { "value": 5, "order": 1 }, { "value": 5, "order": 2 }, { "value": 10 } ]
 
 function insertionSort (array) {
-  // Write your code here, and
-  // return your final answer.
-  
-}
+  var A;
+  var a;
+  for (var j = 0; j < array.length; j++){
+  for (var i = 0; i < array.length - 1; i++){
+    if (array[i].value > array[i + 1].value){
+      A = array[i]
+      a = array[i + 1]
+      array[i] = a
+      array[i + 1] = A 
+    }}}
+  return array 
+};
 
