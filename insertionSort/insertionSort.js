@@ -25,7 +25,8 @@ function insertionSort (array) {
       a = array[i + 1]
       array[i] = a
       array[i + 1] = A 
-    }}}
+    }}
+}
   return array 
 };
 
