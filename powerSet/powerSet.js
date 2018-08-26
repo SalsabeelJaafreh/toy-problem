@@ -21,9 +21,42 @@ string:
 string:
 "obama"  	[ "", "a", "ab", "abm", "abmo", "abo", "am", "amo", "ao", "b", "bm", "bmo", "bo", "m", "mo", "o" ]*/
 
-var powerSet = function(str) {
+function powerSet (string) {
+  // Write your code here, and
+  // return your final answer.
+  // var a="";
+  // var arr=[]
+  // for(var i=0;i<string.length;i++){
+  //   for(var j=1;j<string.length;j++){
+  //     arr.push(string[i])
+  //     arr.push(string[j])
+ 
+              
+  //   }
+  // }
+  // return arr;
 
+    var arr =[];
+  var result=[];
+  var str='';
+  for(var i=0;i<string.length;i++){
+    if(!arr.includes(string[i])){
+      arr.push(string[i]);
+    }
+  }
+  arr.sort();
+  for(var i=0;i<arr.length+1;i++){
+    str='';
+    for(var j=0;j<i;j++){
+  
+      str=str+arr[j];
+    }
+    if(str!==''){
 
+      result.push(str);
+    }
+  }
 
+}
 
-}	
+//i can't solve it now, but i will back to it after i understand how it works 
