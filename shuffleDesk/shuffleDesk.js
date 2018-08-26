@@ -19,7 +19,22 @@ A human shuffler is much more biased;
 it takes around seven normal “riffle” shuffles before a real deck is actually randomized. 
 See https://www.dartmouth.edu/~chance/teaching_aids/books_articles/Mann.pdf */
 
-var shuffleDeck = function(deck) {
+  var shuffleDeck = function(deck) {
   //Your code here
-}
+  var x;
+  var array = []; 
+  for (var i =0 ; i<deck.length;i++){
+    
+   x= Math.floor(Math.random()*i)
+       arr = deck[i];
+       deck[i]=deck[x]
+        deck[x]=arr
+     
+      
+      
+  }
+//return the result
+  return deck;
+  
+};
 
