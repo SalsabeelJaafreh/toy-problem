@@ -26,14 +26,14 @@ See https://www.dartmouth.edu/~chance/teaching_aids/books_articles/Mann.pdf */
   for (var i =0 ; i<deck.length;i++){
     
    x= Math.floor(Math.random()*i)
-       arr = deck[i];
+       array = deck[i];
        deck[i]=deck[x]
-        deck[x]=arr
+        deck[x]=array 
      
       
       
   }
-//return the result
+  //return the result
   return deck;
   
 };
