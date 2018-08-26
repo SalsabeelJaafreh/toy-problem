@@ -23,4 +23,7 @@ string:
 
 var powerSet = function(str) {
 
+
+
+
 }	
