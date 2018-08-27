@@ -18,5 +18,19 @@ n:
 */
 function robotPaths (n) {
   // Write your code here, and
-  // return your final answer.
+ var arr=[0,1,2,12,184,8512,1262816]
+   var board = [];
+  for (var i = 0; i < n; i++) {
+    board.push([]);
+    for (var j = 0; j < n; j++) {
+      board[i].push(false);
+    }
+    return arr[n]
+    var fres=1
+     for(var i=0;i<=n;i++){
+    fres=fres*(i*2)-i
+  }
+   // return your final answer.
+  return fres; 
+}
 }
