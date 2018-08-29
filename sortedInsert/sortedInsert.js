@@ -7,8 +7,51 @@ The stack will have the methods, isEmpty, peek, push, and pop.
 You can also use count to view how many elements are in the stack.
 */
 
+// the stack class is exposed here for reference, you may or may not utilize additional stacks in your algorithm.
+
+var Stack = function (initialValue) {
+  this.store = {};
+  this.count = 0;
+  
+  if (initialValue !== undefined) {
+    this.push(initialValue);
+  }
+};
+
+Stack.prototype.isEmpty = function() {
+  return !this.count;
+};
+
+Stack.prototype.peek = function() {
+  return this.store[this.count];
+};
+
+Stack.prototype.push = function(val) {
+  this.store[++this.count] = val;
+};
+
+Stack.prototype.pop = function() {
+  if (!this.isEmpty()) {
+    var tmp = this.store[this.count];
+    delete this.store[this.count--];
+    return tmp;
+  }
+  
+  
+}
 function sortedInsert(stack, element) {
-  //
-  // TODO
-  //
-} 
+
+  var sortedArray = [];
+  for (var i = 1; i<stack.peek;i++){ 
+    for ( var j = 0; j < i; j++){ 
+      if (stack[i] < stack[j]){  
+       sortedArray.unshift(stack.pop());
+          stack.push(elem);
+      }
+    }
+  }
+  
+}
+// i will back to solve it, but now the time  is late and i must make a survey  
+
+
