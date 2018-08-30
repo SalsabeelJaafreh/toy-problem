@@ -19,6 +19,28 @@ Watch how at https://www.youtube.com/watch?v=ywWBy6J5gz8
 NOTE: DO NOT use JavaScript’s built-in sorting function (Array.prototype.sort).
 */
 function quickSort(arr) {
-  //your code here
+	//your code here 
+   if(arr.length<=1||arr.length==0||arr===null){
+    return arr;
+  }
+
+  //pivot will be the last elem in array 
+  var pivot = arr[arr.length-1];
+  //less will be array of all elem smaller than pivot
+  var less= [];
+   //greater will be array of all elem bigger than pivot
+  var greater = [];
   
+  for(var i=0; i<arr.length-1; i++){
+    
+    if(arr[i] <= pivot){
+      less.push(arr[i]);
+    }        
+    else {
+          greater.push(arr[i]);
+          }
+     
+  }
+  //sort the less array and concatenate with pivot then concatenate with sorted greater array 
+  return quickSort(less).concat(pivot, quickSort(greater));
 }
