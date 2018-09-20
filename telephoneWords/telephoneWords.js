@@ -15,5 +15,20 @@ digitString:
 */
 
 function telephoneWords (digitString) {
-	//your code is here
-}
+    var allposs =['0','1','ABC','DEF','GHI','JKL','MNO','PQRS','TUV','WXYZ'];
+    var tel = [];
+    
+    
+    for (var x = 0; x < allposs[digitString[0]].length; x++)//{
+    for (var y = 0; y < allposs[digitString[1]].length; y++)// {
+            for (var w = 0; w < allposs[digitString[2]].length; w++)//{ 
+            for (var z = 0; z < allposs[digitString[3]].length; z++)//{ 
+            tel.push(allposs[digitString[0]][x] + allposs[digitString[1]][y] + allposs[digitString[2]][w] + allposs[digitString[3]][z]);
+    return tel;
+ }
+ 
+ //}
+   //}
+   //}
+ //}
+      
